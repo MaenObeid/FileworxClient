@@ -66,6 +66,12 @@ Public Class AddNews
 
                 End If
 
+                If Directory.Exists(FileworxClient.newsDirectory) Then
+
+                    Directory.CreateDirectory(FileworxClient.newsDirectory)
+
+                End If
+
                 FileworxClient.fileStreamWriter = New FileStream(filePath, FileMode.OpenOrCreate, FileAccess.Write)
                 FileworxClient.streamWriter = New StreamWriter(FileworxClient.fileStreamWriter)
 

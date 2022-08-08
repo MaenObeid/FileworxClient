@@ -73,7 +73,11 @@ Public Class AddPhoto
 
                 End If
 
+                If Not Directory.Exists(FileworxClient.photosDirectory) Then
 
+                    Directory.CreateDirectory(FileworxClient.photosDirectory)
+
+                End If
 
                 FileworxClient.fileStreamWriter = New FileStream(filePath, FileMode.OpenOrCreate, FileAccess.Write)
                 FileworxClient.streamWriter = New StreamWriter(FileworxClient.fileStreamWriter)

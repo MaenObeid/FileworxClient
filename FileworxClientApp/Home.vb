@@ -14,13 +14,21 @@ Public Class Home
 
         Try
 
-            files = New ArrayList(Directory.GetFiles(FileworxClient.newsDirectory))
+            If Directory.Exists(FileworxClient.newsDirectory) Then
 
-            For Each photo In Directory.GetFiles(FileworxClient.photosDirectory)
+                files = New ArrayList(Directory.GetFiles(FileworxClient.newsDirectory))
 
-                files.Add(photo)
+            End If
 
-            Next
+            If Directory.Exists(FileworxClient.photosDirectory) Then
+
+                For Each photo In Directory.GetFiles(FileworxClient.photosDirectory)
+
+                    files.Add(photo)
+
+                Next
+
+            End If
 
             For Each file In files
 
