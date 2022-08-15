@@ -5,21 +5,44 @@ Public MustInherit Class Post
     Public Property Description() As String
     Public Property Body() As String
     Public Property CreationDate() As DateTime
+    Public Property FilePath() As String
 
-    Public Sub New(title As String, description As String, body As String)
+    Public Sub New(title As String, description As String, body As String, filePath As String, Optional creationDate As DateTime = Nothing)
 
         ' checking the limits before creating the object
         If title.Length < 255 AndAlso description.Length < 255 AndAlso body.Length < 10000 Then
+
             With Me
+
                 .Title = title
                 .Description = description
                 .Body = body
-                .CreationDate = DateTime.Now
+
+                If creationDate = Nothing Then
+
+                    .CreationDate = DateTime.Now
+                Else
+
+                    .CreationDate = creationDate
+
+                End If
+
+                If String.IsNullOrWhiteSpace(filePath) Then
+
+                    .FilePath = Guid.NewGuid().ToString() & ".txt"
+
+                Else
+
+                    .FilePath = filePath
+
+                End If
 
             End With
+
         Else
             Throw New Exception("Exception -> Some fields exceeded the limit")
         End If
+
 
     End Sub
 

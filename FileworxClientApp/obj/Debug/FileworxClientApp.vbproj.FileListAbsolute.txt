@@ -10,9 +10,9 @@ C:\Users\maen\Desktop\FileworxClientApp\FileworxClientApp\bin\Debug\FileworxClie
 C:\Users\maen\Desktop\FileworxClientApp\FileworxClientApp\obj\Debug\FileworxClientApp.exe
 C:\Users\maen\Desktop\FileworxClientApp\FileworxClientApp\obj\Debug\FileworxClientApp.xml
 C:\Users\maen\Desktop\FileworxClientApp\FileworxClientApp\obj\Debug\FileworxClientApp.pdb
-C:\Users\maen\Desktop\FileworxClientApp\FileworxClientApp\obj\Debug\FileworxClientApp.AddUser.resources
-C:\Users\maen\Desktop\FileworxClientApp\FileworxClientApp\obj\Debug\FileworxClientApp.AddNews.resources
-C:\Users\maen\Desktop\FileworxClientApp\FileworxClientApp\obj\Debug\FileworxClientApp.AddPhoto.resources
-C:\Users\maen\Desktop\FileworxClientApp\FileworxClientApp\obj\Debug\FileworxClientApp.Users.resources
-C:\Users\maen\Desktop\FileworxClientApp\FileworxClientApp\obj\Debug\FileworxClientApp.FirstPage.resources
-C:\Users\maen\Desktop\FileworxClientApp\FileworxClientApp\obj\Debug\FileworxClientApp.Home.resources
+C:\Users\maen\Desktop\FileworxClientApp\FileworxClientApp\obj\Debug\FileworxClientApp.frmAddNews.resources
+C:\Users\maen\Desktop\FileworxClientApp\FileworxClientApp\obj\Debug\FileworxClientApp.frmAddPhoto.resources
+C:\Users\maen\Desktop\FileworxClientApp\FileworxClientApp\obj\Debug\FileworxClientApp.frmAddUser.resources
+C:\Users\maen\Desktop\FileworxClientApp\FileworxClientApp\obj\Debug\FileworxClientApp.frmHome.resources
+C:\Users\maen\Desktop\FileworxClientApp\FileworxClientApp\obj\Debug\FileworxClientApp.frmUsers.resources
+C:\Users\maen\Desktop\FileworxClientApp\FileworxClientApp\obj\Debug\FileworxClientApp.frmSignIn.resources

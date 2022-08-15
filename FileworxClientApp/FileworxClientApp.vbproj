@@ -6,11 +6,11 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{BF2852A2-AD75-48E6-BCD4-33D07E239241}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>FileworxClientApp.My.MyApplication</StartupObject>
+    <StartupObject>Sub Main</StartupObject>
     <RootNamespace>FileworxClientApp</RootNamespace>
     <AssemblyName>FileworxClientApp</AssemblyName>
     <FileAlignment>512</FileAlignment>
-    <MyType>WindowsForms</MyType>
+    <MyType>WindowsFormsWithCustomSubMain</MyType>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
@@ -73,47 +73,44 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddNews.Designer.vb">
-      <DependentUpon>AddNews.vb</DependentUpon>
+    <Compile Include="frmAddNews.Designer.vb">
+      <DependentUpon>frmAddNews.vb</DependentUpon>
     </Compile>
-    <Compile Include="AddNews.vb">
+    <Compile Include="frmAddNews.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AddPhoto.Designer.vb">
-      <DependentUpon>AddPhoto.vb</DependentUpon>
+    <Compile Include="frmAddPhoto.Designer.vb">
+      <DependentUpon>frmAddPhoto.vb</DependentUpon>
     </Compile>
-    <Compile Include="AddPhoto.vb">
+    <Compile Include="frmAddPhoto.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AddUser.Designer.vb">
-      <DependentUpon>AddUser.vb</DependentUpon>
+    <Compile Include="frmAddUser.Designer.vb">
+      <DependentUpon>frmAddUser.vb</DependentUpon>
     </Compile>
-    <Compile Include="AddUser.vb">
+    <Compile Include="frmAddUser.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FirstPage.Designer.vb">
-      <DependentUpon>FirstPage.vb</DependentUpon>
+    <Compile Include="ApplicationSettings.vb" />
+    <Compile Include="Category.vb" />
+    <Compile Include="frmSignIn.Designer.vb">
+      <DependentUpon>frmSignIn.vb</DependentUpon>
     </Compile>
-    <Compile Include="FirstPage.vb">
+    <Compile Include="frmSignIn.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.vb">
+    <Compile Include="frmHome.Designer.vb">
+      <DependentUpon>frmHome.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmHome.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.vb">
-      <DependentUpon>Form1.vb</DependentUpon>
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Home.Designer.vb">
-      <DependentUpon>Home.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Home.vb">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="MainModule.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
       <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <Compile Include="My Project\Resources.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -129,28 +126,28 @@
     <Compile Include="Photo.vb" />
     <Compile Include="Post.vb" />
     <Compile Include="User.vb" />
-    <Compile Include="Users.Designer.vb">
-      <DependentUpon>Users.vb</DependentUpon>
+    <Compile Include="frmUsers.Designer.vb">
+      <DependentUpon>frmUsers.vb</DependentUpon>
     </Compile>
-    <Compile Include="Users.vb">
+    <Compile Include="frmUsers.vb">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="AddNews.resx">
-      <DependentUpon>AddNews.vb</DependentUpon>
+    <EmbeddedResource Include="frmAddNews.resx">
+      <DependentUpon>frmAddNews.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AddPhoto.resx">
-      <DependentUpon>AddPhoto.vb</DependentUpon>
+    <EmbeddedResource Include="frmAddPhoto.resx">
+      <DependentUpon>frmAddPhoto.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AddUser.resx">
-      <DependentUpon>AddUser.vb</DependentUpon>
+    <EmbeddedResource Include="frmAddUser.resx">
+      <DependentUpon>frmAddUser.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FirstPage.resx">
-      <DependentUpon>FirstPage.vb</DependentUpon>
+    <EmbeddedResource Include="frmSignIn.resx">
+      <DependentUpon>frmSignIn.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Home.resx">
-      <DependentUpon>Home.vb</DependentUpon>
+    <EmbeddedResource Include="frmHome.resx">
+      <DependentUpon>frmHome.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -158,8 +155,8 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Users.resx">
-      <DependentUpon>Users.vb</DependentUpon>
+    <EmbeddedResource Include="frmUsers.resx">
+      <DependentUpon>frmUsers.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
