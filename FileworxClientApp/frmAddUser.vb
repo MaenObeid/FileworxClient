@@ -77,7 +77,7 @@ Public Class frmAddUser
             Me.Close()
 
         Catch ex As Exception
-            MessageBox.Show(ex.Message.ToString, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            MessageBox.Show(ex.Message.ToString(), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
 
     End Sub

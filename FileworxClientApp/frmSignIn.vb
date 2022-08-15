@@ -34,7 +34,7 @@ Public Class frmSignIn
             Next
 
         Catch ex As Exception
-            MessageBox.Show(ex.Message.ToString)
+            MessageBox.Show(ex.Message.ToString())
         End Try
 
     End Sub
@@ -71,7 +71,7 @@ Public Class frmSignIn
             Next
 
         Catch ex As Exception
-            MessageBox.Show(ex.Message.ToString, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            MessageBox.Show(ex.Message.ToString(), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
 
         Me.Hide()

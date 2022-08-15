@@ -39,7 +39,7 @@ Public Class frmUsers
             Next
 
         Catch ex As Exception
-            MessageBox.Show(ex.Message.ToString)
+            MessageBox.Show(ex.Message.ToString())
         End Try
 
         LoadDataSource()
@@ -78,7 +78,7 @@ Public Class frmUsers
 
         Catch ex As Exception
 
-            MessageBox.Show(ex.ToString, "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            MessageBox.Show(ex.ToString(), "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning)
 
         End Try
 
@@ -137,7 +137,7 @@ Public Class frmUsers
             End Using
 
         Catch ex As Exception
-            MessageBox.Show(ex.Message.ToString, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            MessageBox.Show(ex.Message.ToString(), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
 
     End Sub

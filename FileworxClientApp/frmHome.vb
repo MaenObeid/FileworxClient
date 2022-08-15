@@ -64,7 +64,7 @@ Public Class frmHome
 
 
         Catch ex As Exception
-            MessageBox.Show(ex.Message.ToString)
+            MessageBox.Show(ex.Message.ToString())
         End Try
 
         LoadDataSource()
@@ -93,7 +93,7 @@ Public Class frmHome
                 lblTitleData.Text = .Title
                 lblCreationDateData.Text = .CreationDate
                 rtxtPreviewText.Text = .Body
-                lblCategoryData.Text = .Category.ToString
+                lblCategoryData.Text = .Category.ToString()
 
             End With
 
