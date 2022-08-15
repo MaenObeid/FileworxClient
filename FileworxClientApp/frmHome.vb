@@ -54,7 +54,7 @@ Public Class frmHome
 
                         Dim record As String() = StreamReader.ReadLine().Split({ApplicationSettings.separator}, System.StringSplitOptions.RemoveEmptyEntries)
 
-                        ApplicationSettings.postsMenu.Add(New Photo(record, file.ToString))
+                        ApplicationSettings.postsMenu.Add(New Photo(record, file))
 
                     End Using
 
